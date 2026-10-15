@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #e8f3ff, #d7e9f8);
+    color: #24354b;
+}
+
+.weather-app {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(42, 74, 110, 0.12);
+}
+
+h1 {
+    font-size: 30px;
+    color: #2864a5;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #748399;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #d5e1ed;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #438bd4;
+}
+
+button {
+    padding: 13px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #347fc2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2565a0;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+#message {
+    margin-top: 16px;
+    color: #b54747;
+    font-size: 14px;
+}
+
+.weather-result {
+    margin-top: 20px;
+    padding: 20px 12px;
+    background: #f2f8ff;
+    border-radius: 16px;
+}
+
+.weather-result h2 {
+    font-size: 24px;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 38px;
+    font-weight: bold;
+    color: #2864a5;
+}
+
+#description {
+    margin: 8px 0 18px;
+    color: #65768b;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #91a0b2;
+}
+
+@media (max-width: 380px) {
+    .weather-app {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
